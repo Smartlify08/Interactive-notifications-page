@@ -36,6 +36,8 @@ body {
       color: var(--hover) !important;
     }
   }
+  border: none !important;
+  box-shadow: 10px 10px 20px 5px hsl(211, 68%, 94%, 0.3);
 }
 
 .amount {
