@@ -120,6 +120,14 @@ body {
   }
 }
 
+.attribution {
+  padding: 2rem;
+  & a {
+    color: var(--Verydarkblue);
+    font-size: 0.7rem;
+  }
+}
+
 @media ((width > 767px)) {
   body {
     padding: 5rem 0 !important;
