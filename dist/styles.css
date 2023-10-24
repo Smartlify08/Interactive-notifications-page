@@ -1,0 +1,147 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Verylightgrayishblue: hsl(210, 60%, 98%);
+  --Lightgrayishblue1: hsl(211, 68%, 94%);
+  --Lightgrayishblue2: hsl(205, 33%, 90%);
+  --Grayishblue: hsl(219, 14%, 63%);
+  --Darkgrayishblue: hsl(219, 12%, 42%);
+  --Verydarkblue: hsl(224, 21%, 14%);
+  --darkblue: hsl(219.74, 60.63%, 24.9%);
+  --hover: hsl(217.6, 57.25%, 25.69%);
+
+  --font: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--Verylightgrayishblue);
+}
+
+.avatar {
+  & img {
+    width: 40px;
+  }
+}
+
+.card {
+  & header {
+    & .mark-all:hover {
+      cursor: pointer;
+      color: var(--hover) !important;
+    }
+  }
+}
+
+.amount {
+  font-size: 0.9rem !important;
+}
+
+.alerts {
+  & h1 {
+    font-size: 1.1rem !important;
+  }
+}
+.text-secondary {
+  color: var(--Grayishblue) !important;
+}
+
+.bg-primary {
+  background-color: var(--darkblue) !important;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.text-primary {
+  color: var(--darkblue) !important;
+}
+.text-dark {
+  color: var(--Verydarkblue) !important;
+}
+
+.rhs {
+  & .text-preview {
+    font-size: 0.9rem;
+  }
+}
+
+.message {
+  font-size: 0.9rem !important;
+  word-spacing: 0.04rem;
+  & .name {
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  & .name:hover {
+    color: var(--hover) !important;
+    font-weight: 700 !important;
+    cursor: pointer;
+  }
+  & .post {
+    font-weight: 700;
+  }
+
+  & .post {
+    color: var(--Darkgrayishblue) !important;
+    cursor: pointer;
+  }
+
+  & .post:hover {
+    color: var(--hover) !important;
+  }
+
+  & .club:hover {
+    cursor: pointer;
+    color: var(--hover) !important;
+  }
+}
+
+.notifications {
+  & .unread {
+    position: relative;
+    background-color: var(--Verylightgrayishblue) !important;
+    .ping {
+      background-color: hsl(2.74, 96.69%, 64.51%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+      right: 8%;
+      top: 40%;
+    }
+  }
+}
+
+@media ((width > 767px)) {
+  body {
+    padding: 5rem 0 !important;
+  }
+  .card {
+    width: 750px;
+  }
+  .amount {
+    font-size: 1rem !important;
+  }
+
+  .alerts {
+    & h1 {
+      font-size: 1.3rem !important;
+    }
+  }
+
+  .notifications {
+    & .unread {
+      .ping {
+        position: unset;
+      }
+    }
+  }
+}
